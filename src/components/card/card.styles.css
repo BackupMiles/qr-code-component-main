@@ -1,0 +1,50 @@
+:root {
+  --card-width: 15rem;
+  --rounded-border: 15px;
+  --qr-color-white: hsl(0, 0%, 100%);
+  --qr-color-light-gray: hsl(212, 45%, 89%);
+  --qr-color-grayish-blue: hsl(220, 15%, 55%);
+  --qr-color-dark-blue: hsl(218, 44%, 22%);
+}
+
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+body {
+  background-color: var(--qr-color-light-gray);
+}
+
+.card {
+  background-color: var(--qr-color-white);
+  border-radius: var(--rounded-border);
+  width: var(--card-width);
+  padding: 1rem;
+
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.card__image > img {
+  aspect-ratio: 1/1;
+  width: var(--card-width);
+  border-radius: var(--rounded-border);
+}
+
+.card__body {
+  color: var(--qr-color-dark-blue);
+  font-weight: bolder;
+  font-size: large;
+}
+
+.card__title {
+  line-height: 1.5rem;
+  padding-top: 1rem;
+}
+
+.card__subtitle {
+  padding: 1rem 0rem;
+  font-weight: normal;
+  font-size: small;
+  opacity: 0.8;
+}
