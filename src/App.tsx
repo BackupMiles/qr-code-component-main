@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <div className="main">
-        <Card imgSrc='../images/image-qr-code.png' subtitle={subtitle} title={title} />
+        <Card imgSrc='/images/image-qr-code.png' subtitle={subtitle} title={title} />
       </div>
     </div>
   )
